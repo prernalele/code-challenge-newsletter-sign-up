@@ -1,0 +1,150 @@
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+ /* * {
+    box-sizing: border-box;
+}  */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: myFont;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.card {
+    /* margin-top: 40px; */
+    display: flex;
+    background-color: white;
+    padding: 30px;  
+    border-radius: 20px ;
+    width: 800px;
+}
+
+.heading { 
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.right {
+    width: 40%;
+}
+
+.right > img {
+    width : 100%;
+}
+
+.left {
+    margin: 20px;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+label {
+    margin-bottom: 10px;
+}
+input { 
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+.subscribe-button, .dismiss-button {
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-family: inherit;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-image: url(./assets/images/icon-list.svg);
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.card-thankyou.hide {
+    display: none;
+}
+
+.card.hide {
+    display: none
+}
+
+.card-thankyou {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;  
+    border-radius: 30px ;
+    width: 300px;
+    margin: 40px;
+}
+
+.card-thankyou > img {
+    width:20%;
+}
+
+.email-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-error-display {
+    color: red;
+    padding: 0px;  
+    margin: 0px;
+    align-items: right;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .card h1 {
+        font-size: 30px;
+    }
+    .right {
+        width: 100%;
+    }
+    .right img {
+        content: url(./assets/images/illustration-sign-up-mobile.svg)
+    }
+    
+    .left {
+        width: 100%;
+    }
+    form {
+        width: 90%
+    }
+    .card-thankyou {
+        width:90%;
+        min-height: 100vh;
+        padding: 0;
+    }
+}
+
+
